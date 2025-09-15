@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# AI-BASED-RESUME-SCREEING-SYSTEM
 
-## Project info
+This project addresses the challenges of traditional recruitment by automating resume screening and candidate evaluation. The AI-Powered Resume Screening System transforms manual, time-consuming, and biased processes into an intelligent, data-driven workflow.
 
-**URL**: https://lovable.dev/projects/cb669867-025e-4664-8613-75d1c9f259f2
+## Features
 
-## How can I edit this code?
+- **AI-Powered Resume Analysis**: Automated screening using advanced AI algorithms
+- **Candidate Management**: Comprehensive dashboard for managing candidates
+- **Analytics & Insights**: Detailed analytics and reporting capabilities
+- **Modern UI**: Built with React, TypeScript, and Tailwind CSS
+- **Real-time Updates**: Live data synchronization with Supabase
+- **Responsive Design**: Works seamlessly across all devices
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **Backend**: Supabase (Database, Authentication, Real-time)
+- **Charts**: Recharts for data visualization
+- **State Management**: React Context API
+- **Build Tool**: Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cb669867-025e-4664-8613-75d1c9f259f2) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm or yarn
+- Supabase account
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/karthikrm04/AI-BASED-RESUME-SCREEING-SYSTEM.git
+cd AI-BASED-RESUME-SCREEING-SYSTEM
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Set up environment variables:
+Create a `.env.local` file in the root directory and add your Supabase credentials:
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   └── ...             # Feature-specific components
+├── pages/              # Application pages
+├── hooks/              # Custom React hooks
+├── contexts/           # React context providers
+├── integrations/       # External service integrations
+│   └── supabase/       # Supabase configuration
+├── lib/                # Utility functions
+└── types/              # TypeScript type definitions
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-This project is built with:
+## License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## How can I deploy this project?
+## Support
 
-Simply open [Lovable](https://lovable.dev/projects/cb669867-025e-4664-8613-75d1c9f259f2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+If you have any questions or need help, please open an issue in the GitHub repository.
